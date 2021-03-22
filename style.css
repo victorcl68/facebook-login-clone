@@ -40,7 +40,7 @@
   width: 400px;
 }
 
-#firstname, #lastname {
+#firstname , #lastname {
   border: 1px solid transparent;
   height: 21px;
   margin: 0;
