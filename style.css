@@ -62,7 +62,7 @@ body {
   width: 377px;
 }
 
-#label-birthdate {
+#label-birthdate , #label-gender {
   height: 21px;
   margin: 10px 0 5px 0;
   width: 400px;
