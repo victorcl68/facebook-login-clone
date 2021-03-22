@@ -32,6 +32,7 @@
 }
 
 #facebook-register {
+  align-content: flex-start;
   display: flex;
   flex-wrap: wrap;
   height: 423px;
@@ -46,4 +47,12 @@
   margin: 0;
   padding: 8px 10px;
   width: 172px;
+}
+
+#phone_email , #password {
+  border: 1px solid transparent;
+  height: 21px;
+  margin: 0;
+  padding: 8px 10px;
+  width: 377px;
 }
