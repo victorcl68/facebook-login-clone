@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
@@ -55,4 +60,16 @@
   margin: 0;
   padding: 8px 10px;
   width: 377px;
+}
+
+#label-birthdate {
+  height: 21px;
+  margin: 10px 0 5px 0;
+  width: 400px;
+}
+
+#birthdate {
+  border: 1px solid transparent;
+  margin: 0;
+  padding: 5px;
 }
