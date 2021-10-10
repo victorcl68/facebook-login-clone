@@ -11,14 +11,15 @@
   <header class="top-bar">
     <img class="facebook-logo" src="imgs/facebook-logo.png" alt="facebook-logo">
     <form class="facebook-login">
-      <div class="form-group">
-        <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
-        <input type="text" name="user-email-phone" id="user-email-phone">
-      </div>
-      <div class="form-group">
-        <label for="user-password" id="user-password-label">Senha</label>
-        <input type="password" name="user-password" id="user-password">
-      </div>
+        <div class="form-group">
+          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+          <input type="text" name="user-email-phone" id="user-email-phone">
+        </div>
+        <div class="form-group">
+          <label for="user-password" id="user-password-label">Senha</label>
+          <input type="password" name="user-password" id="user-password">
+          <a id="forgot-account">Esqueceu a conta?</a>
+        </div>
       <div class="form-control">
         <button id="button-login">Entrar</button>
       </div>
@@ -30,15 +31,20 @@
       <img id="facebook-networking" src="imgs/networking.png">
     </div>
     <div class="right-content">
-      <h1>Abra uma conta</h1>
+      <h1 id="open-account-title">Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form id="facebook-form">
-        <input type="text" name="firstname" id="firstname" placeholder="Nome">
-        <input type="text" name="lastname" id="lastname" placeholder="Sobrenome">
+        <input type="text" name="first-name" id="first-name" placeholder="Nome">
+        <input type="text" name="last-name" id="last-name" placeholder="Sobrenome">
         <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email">
         <input type="password" name="password" id="password" placeholder="Nova senha">
         <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-        <input name="birthdate" id="birthdate" type="text" placeholder="dd/mm/aaaa">
+        <select name="birthdate-days" id="birthdate-days" ></select>
+        <select name="birthdate-months" id="birthdate-months"></select>
+        <select name="birthdate-years" id="birthdate-years"></select>
+        <div class="birthdate-container">
+          <div class="hm">?<div>Informe sua data de nascimento.</div></div>
+        </div>
         <label id="label-gender">Gênero</label>
         <input type="radio" value="Feminino" name="gender" id="Feminino">
         <label for="Feminino">Feminino</label>
@@ -46,10 +52,20 @@
         <label for="Masculino">Masculino</label>
         <input type="radio" value="Personalizado" name="gender" id="Personalizado">
         <label for="Personalizado">Personalizado</label>
+        <div>
+          <p id="policy-agreement">Ao clicar em Cadastre-se, você concorda com nossos <a href="#">Termos</a>, <a href="#">Política de Dados</a> e <a href="#">Política de Cookies.</a> Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+        </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
+          <p id="suggestion"><a href="#">Criar uma Página</a> para uma celebridade, banda ou empresa.</p>
       </form>
     </div>
   </section>
+  <footer>
+    <button id="plus-languages-button">+</button>
+    <hr>
+    <p id="copy">Facebook © 2021</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
+

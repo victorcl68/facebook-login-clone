@@ -1,49 +1,129 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-flex;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+footer {
+  height: 200px;
+  background-color: white;
+  margin-left: 15%;
+}
+
+hr {
+  margin-right: 20%;
+}
+
+#plus-languages-button {
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid rgb(169, 183, 207);
+  margin-top: 4px;
+}
+
+#copy {
+  color: grey;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .top-bar {
   display: flex;
-  background-color: rgb(66, 103, 178);
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: rgb(25, 66, 149);
   align-items: center;
 }
 
 .facebook-login {
   display: flex;
+  margin: 10px 0;
+}
+
+#facebook-slogan {
+  font-weight: 900;
+  color: rgb(25, 66, 149);
+  width: 535px;
+  font-size: 22px;
+}
+
+#open-account-title {
+  font-size: 35px;
+  margin: 5px;
+  width: 400px;
+}
+
+.quick-easy {
+  margin: 5px;
+  font-size: 20px;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+#user-email-phone-label , #user-password-label {
+  color: white;
+}
+
+#first-name , #last-name {
+  border: 1px solid grey;
+  border-radius: 2px;
+  height: 25px;
+  width: 42%;
+  padding: 8px 10px;
+  margin: 5px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
 }
 
 .main-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  background-color: rgb(212, 221, 235);
 }
 
 .left-content {
-  width: 800px;
+  width: fit-content;
 }
 
 .right-content {
-  width: 300px;
+  width: 400px;
 }
 
 #facebook-form {
   align-content: flex-start;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  height: 423px;
+  height: fit-content;
   margin: 0;
   padding: 0;
   width: 400px;
+}
+
+#button-login {
+  background-color: rgb(25, 66, 149);
+  color: white;
+  border: 1px solid rgb(6, 35, 93);
+  margin-left: 3px;
+}
+
+#forgot-account {
+  color: grey;
+  font-size: 12px;
 }
 
 #firstname , #lastname {
@@ -55,27 +135,99 @@ body {
 }
 
 #phone_email , #password {
-  border: 1px solid transparent;
-  height: 21px;
-  margin: 0;
   padding: 8px 10px;
-  width: 377px;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 2px;
+  margin: 5px;
+  height: 25px;
 }
 
 #label-birthdate , #label-gender {
   height: 21px;
-  margin: 10px 0 5px;
+  margin: 10px 0 5px 5px;
   width: 400px;
+  color: rgb(93, 93, 93);
+  font-weight: 900;
 }
 
-#birthdate {
+.birthdate {
   border: 1px solid transparent;
   margin: 0;
   padding: 5px;
 }
 
+#Masculino , #Feminino , #Personalizado {
+  margin: 0 10px 0 15px;
+}
+
+#birthdate-days , #birthdate-months , #birthdate-years {
+  height: 25px;
+  width: 80px;
+  margin: 5px;
+}
+
 #facebook-register {
   margin: 20px 0;
-  align-self: flex-start;
   width: 200px;
+  height: 50px;
+  border: 1px solid rgb(0, 73, 0);
+  background-color: rgb(0, 138, 0);
+  border-radius: 4px;
+  color: white;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.hm div {
+  display: none;
+  position: relative;
+  width: 15em;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.birthdate-container {
+  display: flex;
+  width: 100%;
+}
+
+.hm:hover div {
+  display: block;
+  position: absolute;
+  top: 43.5%;
+  margin-left: 32px;
+  font-size: 16px;
+}
+
+.hm {
+  margin-top: 4px;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  font: 20px/1em segoe ui, arial, helvetica, sans-serif;
+  border: 1px solid grey;
+  border-radius: 50%;
+  color: white;
+  margin-left: 5px;
+  align-self: center;
+  background-color: grey;
+  display: block;
+}
+
+#policy-agreement {
+  color: grey;
+  font-size: 15px;
+  width: 95%;
+  flex-direction: column;
+  margin: 5px;
+}
+
+#suggestion {
+  font-size: 15px;
+  color: rgb(56, 56, 56);
+  font-weight: 900;
+  margin: 5px 0 10px 5px;
 }
